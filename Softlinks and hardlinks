@@ -1,0 +1,39 @@
+Soft link:
+A soft link (also known as Symbolic link).
+It acts as a pointer or a reference to the file name. 
+It does not access the data available in the original 
+file. 
+Each soft linked file contains a separate Inode value
+that points to the original file. 
+Soft links can be linked across different file systems,
+although if the original file is deleted or moved, the
+soft linked file will not work correctly (called 
+hanging link).
+ls -l command shows all links with first column value 
+l? and the link points to original file.
+Soft Link contains the path for original file and not
+the contents.
+Removing soft link doesn’t affect anything but 
+removing original file, the link becomes “dangling”
+link which points to nonexistent file.
+A soft link can link to a directory.
+Hard links:
+A hard link acts as a copy (mirrored) of the selected
+file. 
+It accesses the data available in the original file.
+If the earlier selected file is deleted, the hard link 
+to the file will still contain the data of that file.
+Links have actual file contents.
+Removing any link, just reduces the link count, but 
+doesn’t affect other links.
+Even if we change the filename of the original file
+then also the hard links properly work.
+We cannot create a hard link for a directory to avoid
+recursive loops.
+If original file is removed then the link will still
+show the content of the file.
+The size of any of the hard link file is same as the 
+original file and if we change the content in any of
+the hard links then size of all hard link files are 
+updated.
+ 
