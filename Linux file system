@@ -1,0 +1,80 @@
+Basic commands:
+1. pwd- pwd stands for print making directory. It is 
+        used to find path of working directory. 
+2. head- It is used to give output of the first part 
+         of the file. 
+         Ex. head [OPTIONS] FILES. 
+3. tail- It is used to print the last part of the file.
+         Ex. tail[OPTIONS] FILES.
+4. cd-  Change the current working directory. 
+        Ex. Ex. /home/username/Documents.
+5. cp- It is used to copy the file from current
+       directory. 
+       Ex. cp file.txt
+6. ls- Used to view the content of directory.
+       Ex. ls/home/username/Documents.
+7. cat- Used to list the content of file.
+8. mv- Used to move or rename the file.
+       Ex. mv file.txt/home/username/Documents.
+9. mkdir- Used to make a new directory.
+          Ex. mkdir/Newfile
+10. touch- Create a new blank file.
+           Ex. Ex. touch newfile.txt
+11. rm- Used to delete directory.
+        Ex.rm file.txt 
+12. df- The 'df' stands for "disk filesystem."
+        Linux df command is used to display the 
+        disk space used in the file system.
+13. echo- echo command in linux is used to display 
+          line of text/string that are passed as an 
+          argument.
+14. uname- uname stands for user name.
+15. chmod- It is used to change the access mode of 
+           the file. 
+
+Directory:
+File Permission:
+ The permissions of a file are the first line of 
+ defense in the security of a Unix system.The basic 
+ building blocks of Unix permissions are the read,
+ write, and execute permissions, which have been
+ described below −The permissions of a file are the
+ first line of defense in the security of a Unix 
+ system. The basic building blocks of Unix permissions 
+ are the read, write, and execute permissions, which
+ have been described below −
+
+ *Read
+  Grants the capability to read, i.e., view the
+  contents of the file.
+
+ *Write
+  Grants the capability to modify, or remove the
+  content of the file.
+
+ *Execute
+  User with execute permissions can run a file as 
+  a program.
+
+*Directory Permission:
+  Directory access modes are listed and organized in
+  the same manner as any other file.
+  There are a few differences that need to be 
+  mentioned −
+
+  *Read
+   Access to a directory means that the user can read
+   the contents. The user can look at the filenames 
+   inside the directory.
+
+  *Write
+   Access means that the user can add or delete files 
+   from the directory.
+
+  *Execute
+    Executing a directory doesn't really make sense,
+    so think of this as a traverse permission.
+
+   A user must have execute access to the bin 
+   directory in order to execute the ls or the cd 
+   command.
