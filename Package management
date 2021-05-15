@@ -1,0 +1,59 @@
+Package management is a method of installing and 
+maintaining (which includes updating and probably 
+removing as well) software on the system.
+If a certain package requires a certain resource 
+such as a shared library, or another package, 
+it is said to have a dependency. 
+
+dpkg is a low-level package manager for Debian-based 
+systems. It can install, remove, provide information
+about and build *.deb packages but it can’t 
+automatically download and install their corresponding 
+dependencies.
+
+apt-get is a high-level package manager for Debian and 
+derivatives, and provides a simple way to retrieve and 
+install packages, including dependency resolution, 
+from multiple sources using the command line.
+Unlike dpkg, apt-get does not work directly with *.deb 
+files, but with the package proper name.
+
+aptitude is another high-level package manager for 
+Debian-based systems, and can be used to perform 
+management tasks (installing, upgrading, and removing
+packages, also handling dependency resolution
+automatically) in a fast and easy way.
+
+rpm is the package management system used by Linux 
+Standard Base (LSB)-compliant distributions for 
+low-level handling of packages.
+
+yum adds the functionality of automatic updates and 
+package management with dependency management to 
+RPM-based systems.
+
+Some of the commands used are: 
+     1.To view the package details: yum info PACKAGENAME 
+     2.Install a package:  yum install PACKAGENAME 
+     3.Update all PAckage: yum update
+     4.Remove a package: yum remove PACKAGENAME
+     5.To view transaction history: yum remove PACKAGENAME
+     6.To reverse a transaction: yum history undo INDEXNUMBER
+
+Yum package manager: 
+The Yellowdog Updater, Modified (YUM) is a free and 
+open-source command-line package-management utility 
+for computers running the Linux operating system using 
+the RPM Package Manager.
+YUM allows for automatic updates and package and 
+dependency management on RPM-based distributions.
+
+Yam Repository:
+   1.It is warehouse of linux software.
+   2.It holds a number of.  RPM package file and 
+     enable download and installation of new software 
+     on our VPS.
+   *Yum Repository
+    YUM Repository configuration files must:
+    1. be located in /etc/yum.repos.d/ directory
+    2. have .repo extension, to be recognized by YUM
